@@ -1,0 +1,8 @@
+<group name="windows,">
+    <rule id="100001" level="5">
+        <decoded_as>syscheck</decoded_as>
+        <field name="program">chrome.exe</field>
+        <field name="event">create</field>
+        <description>Alert: chrome.exe has created a file</description>
+    </rule>
+</group>
