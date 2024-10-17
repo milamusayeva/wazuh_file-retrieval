@@ -1,0 +1,19 @@
+<group name="malware, suspicious">
+  <rule id="100002" level="12">
+    <decoded_as>json</decoded_as>
+    <field name="event_type">file_integrity</field>
+    <field name="action">added</field>
+    <field name="data.process.parent_name">chrome.exe</field>
+    <description>File created by Chrome, possible malware</description>
+    <options>alert</options>
+  </rule>
+
+  <rule id="100003" level="12">
+    <decoded_as>json</decoded_as>
+    <field name="event_type">file_integrity</field>
+    <field name="action">added</field>
+    <field name="data.process.parent_name">msedge.exe</field>
+    <description>File created by Edge, possible malware</description>
+    <options>alert</options>
+  </rule>
+</group>
