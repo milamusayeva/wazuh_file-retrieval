@@ -1,4 +1,4 @@
-1. Add the rule (local_rules.xml) and restart Wazuh to load the new rules:
+1. Add a custom rule in /var/ossec/ruleset/rules/ (local_rules.xml) and restart Wazuh to load the new rules:
 ``` 
 sudo systemctl restart wazuh-manager
 ```
